@@ -39,16 +39,16 @@
      
     });
     console.table(fifteen);
-
+    //same thing in es6
     const fifteenES6 = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600))
-    
-    
-  
     console.table(fifteenES6);
 
 
-    // Array.prototype.map()
+    // Array.prototype.map() ///stamps+returns returns all
     // 2. Give us an array of the inventors' first and last names
+
+    const fullNames = inventors.map(inventor => `${inventor.first} ${inventors.last}`);
+    console.log(fullNames);
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
